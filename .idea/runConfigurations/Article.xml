@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Article" type="KarateRunConfiguration" factoryName="KarateRunConfiguration">
+    <option name="karatePath" value="$PROJECT_DIR$/src/test/java/karateTestApi/feature/Article.feature" />
+    <module name="karate" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

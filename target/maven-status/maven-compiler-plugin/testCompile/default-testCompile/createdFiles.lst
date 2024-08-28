@@ -1,0 +1,5 @@
+karateTestApi\helpers\DataGenerator.class
+karateTestApi\feature\KarateTestApiRunner.class
+karateTestApi\ExamplesTest.class
+karateTestApi\performance\KarateTestApiPerformance.class
+karateTestApi\users\UsersRunner.class

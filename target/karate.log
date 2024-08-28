@@ -1,0 +1,149 @@
+18:28:37.206 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+18:28:37.859 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+18:28:39.873 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+18:28:39.873 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+18:28:39.904 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+18:28:39.906 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+18:28:44.650 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:28:44.659 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:28:44.922 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:28:44.938 [GatlingSystem-akka.actor.default-dispatcher-9] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@616aed86 has finished injecting
+18:28:44.938 [GatlingSystem-akka.actor.default-dispatcher-9] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+18:28:45.970 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:28:46.351 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+18:28:46.351 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  com.intuit.karate - karate.env system property was: null 
+18:28:46.351 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+18:28:46.351 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - karate.env system property was: null 
+18:28:46.369 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:karateTestApi/helpers/CreateToken.feature
+18:28:46.664 [GatlingSystem-akka.actor.default-dispatcher-10] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 73
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"mootezbenabdallah96@gmail.com","password":"karate123"}}
+
+18:28:47.302 [GatlingSystem-akka.actor.default-dispatcher-10] DEBUG com.intuit.karate - response time in milliseconds: 632
+1 < 200
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"143-+AqO7st8SYcju9B3NFyUJkEv09A"
+1 < X-Cloud-Trace-Context: 9d5932f815fd32f14116f20bab878ff1;o=1
+1 < Date: Sun, 25 Aug 2024 17:28:44 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 323
+{"user":{"email":"mootezbenabdallah96@gmail.com","username":"test karate","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3NjM0fSwiaWF0IjoxNzI0NjA2OTI0LCJleHAiOjE3Mjk3OTA5MjR9.5WKnxyW1tT1fi3X469BpKv0K5vrhEurCZGHi2JvAPI4"}}
+
+18:28:47.318 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:karateTestApi/helpers/CreateToken.feature
+18:28:47.320 [GatlingSystem-akka.actor.default-dispatcher-6] WARN  com.intuit.karate - this thread waited 950 milliseconds for callSingle lock: classpath:karateTestApi/helpers/CreateToken.feature
+18:28:47.322 [GatlingSystem-akka.actor.default-dispatcher-7] WARN  com.intuit.karate - this thread waited 953 milliseconds for callSingle lock: classpath:karateTestApi/helpers/CreateToken.feature
+18:28:47.324 [GatlingSystem-akka.actor.default-dispatcher-8] WARN  com.intuit.karate - this thread waited 955 milliseconds for callSingle lock: classpath:karateTestApi/helpers/CreateToken.feature
+18:28:47.702 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3NjM0fSwiaWF0IjoxNzI0NjA2OTI0LCJleHAiOjE3Mjk3OTA5MjR9.5WKnxyW1tT1fi3X469BpKv0K5vrhEurCZGHi2JvAPI4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 101
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"title4","description":"description4","body":"Hodor? Hodor.","tagList":["tag1"]}}
+
+18:28:47.702 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3NjM0fSwiaWF0IjoxNzI0NjA2OTI0LCJleHAiOjE3Mjk3OTA5MjR9.5WKnxyW1tT1fi3X469BpKv0K5vrhEurCZGHi2JvAPI4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 158
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"title2","description":"description2","body":"Once you\u2019ve accepted your flaws, no one can use them against you.","tagList":["tag1"]}}
+
+18:28:47.702 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3NjM0fSwiaWF0IjoxNzI0NjA2OTI0LCJleHAiOjE3Mjk3OTA5MjR9.5WKnxyW1tT1fi3X469BpKv0K5vrhEurCZGHi2JvAPI4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 195
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"title1","description":"description1","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":["tag1"]}}
+
+18:28:47.702 [GatlingSystem-akka.actor.default-dispatcher-10] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3NjM0fSwiaWF0IjoxNzI0NjA2OTI0LCJleHAiOjE3Mjk3OTA5MjR9.5WKnxyW1tT1fi3X469BpKv0K5vrhEurCZGHi2JvAPI4
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 134
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"title3","description":"description3","body":"All dwarfs are bastards in their father's eyes","tagList":["tag1"]}}
+
+18:29:03.175 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 15469
+1 < 201
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1ad-zaLCB51GUBr5RmOukRvwr36EMTY"
+1 < X-Cloud-Trace-Context: d753c2fb6a51f69db7e73d0fa28c74fb
+1 < Date: Sun, 25 Aug 2024 17:29:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 429
+{"article":{"slug":"title2-7634","title":"title2","description":"description2","body":"Once you’ve accepted your flaws, no one can use them against you.","tagList":["Tag1"],"createdAt":"2024-08-25T17:29:00.254Z","updatedAt":"2024-08-25T17:29:00.254Z","favorited":false,"favoritesCount":0,"author":{"username":"test karate","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+18:29:03.179 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 15472
+1 < 201
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1d5-n7pdj8ImO6V3cqvR02QiVS4lubs"
+1 < X-Cloud-Trace-Context: dd66f2d10d0565f07a12765619ca1d2b
+1 < Date: Sun, 25 Aug 2024 17:29:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 469
+{"article":{"slug":"title1-7634","title":"title1","description":"description1","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":["Tag1"],"createdAt":"2024-08-25T17:29:00.264Z","updatedAt":"2024-08-25T17:29:00.264Z","favorited":false,"favoritesCount":0,"author":{"username":"test karate","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+18:29:03.289 [GatlingSystem-akka.actor.default-dispatcher-10] DEBUG com.intuit.karate - response time in milliseconds: 15583
+1 < 201
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"198-8qhpHHCcY1S2PhyPYoHX7ONfA/s"
+1 < X-Cloud-Trace-Context: 6adc1219e8c168050191266dc857ee3a
+1 < Date: Sun, 25 Aug 2024 17:29:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 408
+{"article":{"slug":"title3-7634","title":"title3","description":"description3","body":"All dwarfs are bastards in their father's eyes","tagList":["Tag1"],"createdAt":"2024-08-25T17:29:00.288Z","updatedAt":"2024-08-25T17:29:00.288Z","favorited":false,"favoritesCount":0,"author":{"username":"test karate","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+18:29:03.289 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 15584
+1 < 201
+1 < x-powered-by: Express
+1 < access-control-allow-origin: https://conduit.bondaracademy.com
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"177-QtPbtaxtuWiOqDlA9XxH7nY1UiY"
+1 < X-Cloud-Trace-Context: b1508f1864f8d2687459a6be964e9052
+1 < Date: Sun, 25 Aug 2024 17:29:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 375
+{"article":{"slug":"title4-7634","title":"title4","description":"description4","body":"Hodor? Hodor.","tagList":["Tag1"],"createdAt":"2024-08-25T17:29:00.380Z","updatedAt":"2024-08-25T17:29:00.380Z","favorited":false,"favoritesCount":0,"author":{"username":"test karate","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+18:29:08.307 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All users of scenario create are stopped
+18:29:08.308 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - Stopping
+18:29:08.310 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+18:29:08.382 [GatlingSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+18:29:08.442 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(D:\Karate-Project\karate\target\gatling\perftest-20240825172839776\simulation.log) from perftest-20240825172839776
+18:29:08.464 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+18:29:08.475 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 14 lines
+18:29:08.494 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+18:29:08.541 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 14 lines
