@@ -1,7 +1,7 @@
 {
   "simulation": "karateTestApi.performance.PerfTest",
-  "simulationId": "perftest-20240825172839776",
-  "start": 1724606923933,
+  "simulationId": "perftest-20240905185044147",
+  "start": 1725562248250,
   "description": "",
   "scenarios": ["create"],
   "assertions": [

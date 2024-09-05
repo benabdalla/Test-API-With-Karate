@@ -1,5 +1,7 @@
 karateTestApi\helpers\DataGenerator.class
+karateTestApi\performance\CreateToken.class
 karateTestApi\feature\KarateTestApiRunner.class
 karateTestApi\ExamplesTest.class
+karateTestApi\Main.class
 karateTestApi\performance\KarateTestApiPerformance.class
 karateTestApi\users\UsersRunner.class

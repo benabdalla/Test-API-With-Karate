@@ -15,9 +15,9 @@ function fn() {
   }
 
     // Corrected the method name from callSlingle to callSingle
-    var accessToken = karate.callSingle('classpath:karateTestApi/helpers/CreateToken.feature', config).Authtoken;
-  config.userName = karate.callSingle('classpath:karateTestApi/helpers/CreateToken.feature', config).Username;
-    karate.configure('headers', { Authorization: 'Token ' + accessToken });
+//    var accessToken = karate.callSingle('classpath:karateTestApi/helpers/CreateToken.feature', config).Authtoken;
+//  config.userName = karate.callSingle('classpath:karateTestApi/helpers/CreateToken.feature', config).Username;
+//    karate.configure('headers', { Authorization: 'Token ' + accessToken });
 
 
   return config;

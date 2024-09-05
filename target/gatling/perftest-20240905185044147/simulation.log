@@ -1,0 +1,10 @@
+RUN	karateTestApi.performance.PerfTest	perftest	1725562244147	 	3.9.5
+USER	create	START	1725562248250
+USER	create	START	1725562248250
+USER	create	START	1725562248250
+REQUEST		POST /api/articles	1725562248512	1725562248839	KO	karateTestApi/performance/CreateArticle.feature:22 status 201
+REQUEST		POST /api/articles	1725562248512	1725562248848	KO	karateTestApi/performance/CreateArticle.feature:22 status 201
+USER	create	END	1725562248863
+USER	create	END	1725562248864
+REQUEST		POST /api/articles	1725562248512	1725562248874	KO	karateTestApi/performance/CreateArticle.feature:22 status 201
+USER	create	END	1725562248878
